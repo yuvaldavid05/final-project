@@ -1,0 +1,35 @@
+.homePage{
+    height:80vh;
+    width:75%;
+    text-align: center;
+    /* border:4px solid blue; */
+    margin: auto;
+    padding:30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    padding-bottom: 5%;
+
+}
+
+.bigDiv{
+    width:90%;
+    height:75%;
+    border:1px solid rgba(245, 245, 245, 0.542);
+    border-radius: 20px;
+    background-color: wheat;
+    margin:40px auto 35px auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+}
+
+.smallDiv{
+    width:90%;
+    height:20%;
+    border:1px solid rgba(245, 245, 245, 0.542);
+    border-radius: 20px;
+    background-color: blue;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
