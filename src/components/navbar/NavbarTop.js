@@ -2,73 +2,53 @@ import './NavbarTop.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import { Link } from "react-router-dom";
-import { GrActions, GrCircleInformation, GrPhone } from "react-icons/gr";
+import { Link } from 'react-router-dom';
+
 
 
 export default function NavbarTop() {
+    const category = [
+        { name: '/dresses', title: ' שמלות', number: '0' },
+        { name: '/jeans', title: ' גינסים', number: '1' },
+        { name: '/shirts', title: ' חולצות', number: '2' },
+        { name: '/shoes', title: ' נעליים', number: '3' },
+        { name: '/category', title: ' קטגוריה', number: '4' },
+    ]
+
     return (
         <>
-            <Navbar expand="lg" className=" navTop">
+            <div className='top d-flex '>
+                <div>buy Icon</div>
+                <div>wishList</div>
+                <div className='flex-grow-1'>
+                    <Navbar.Brand href="/">React-Bootstrap</Navbar.Brand>
+                </div>
+                <div>contact</div>
+            </div>
+            <Navbar collapseOnSelect expand="lg" className=" mainNav" sticky="top">
                 <Container>
-                    <Navbar.Brand href="/">Icon</Navbar.Brand>
-                    {/* <Navbar.Brand href="#home">
-                        <img
-                            alt=""
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEwV1VGlueUquV1LDWI--DbRKrbYAlG_ahhg&usqp=CAU"
-                            width="30"
-                            height="30"
-                            className="d-inline-block align-top"
-                        />{' '}
-                        Icon
-                    </Navbar.Brand> */}
+                    <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                        <Nav className="me-auto justify-content-center flex-grow-1 ">
+                            {
+                                category.map((c, i) => (
+                                    <Nav.Link key={i} className=' text-break fw-bolder'>
+                                        <Link to={c.name} className='linkCategory text-decoration-none'>{c.title}</Link>
+                                    </Nav.Link>
+                                )
+                                )
+                            }
 
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="m-auto navFrame">
-                            <Nav.Link className='aFrame'>
-                                <Link to="">
-                                    התחבר
-                                </Link>
-                            </Nav.Link>
-                            <div className="vr" />
-                            <Nav.Link className='aFrame'>
-                                <Link to="/contact-us">
-                                    צור קשר
-                                    <GrPhone />
-                                </Link>
-                            </Nav.Link>
-                            <Nav.Link className='aFrame'>
-                                <Link to="/about">
-                                    אודות
-                                    <GrCircleInformation />
-                                </Link>
-                            </Nav.Link>
-                            <Nav.Link className='aFrame'>
-                                <Link to="/build-trip">
-                                    תכנן מסלול
-                                    <GrActions />
-                                </Link>
-                            </Nav.Link>
-
-                            {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">
-                                    Another action
-                                </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.4">
-                                    Separated link
-                                </NavDropdown.Item>
-                            </NavDropdown> */}
-
+                            <Nav.Link href="#features">Features</Nav.Link>
+                            <Nav.Link href="#features">Features</Nav.Link>
+                            <Nav.Link href="#features">Features</Nav.Link>
+                            <Nav.Link href="#pricing">Pricing</Nav.Link>
                         </Nav>
-
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
+
         </>
     );
 }

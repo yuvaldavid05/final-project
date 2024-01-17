@@ -1,5 +1,6 @@
 import './App.css';
 import Router from './Router';
+import Fotter from './components/footer/Footer';
 import Navbar from './components/navbar/NavbarTop';
 
 function App() {
@@ -9,6 +10,9 @@ function App() {
         <Navbar />
         <Router />
       </header>
+      <footer>
+        <Fotter />
+      </footer>
     </div>
   );
 }

@@ -1,0 +1,43 @@
+.categoryPage{
+    min-height: 100%;
+    padding-top: 30px;
+}
+
+.categoryPage h4{
+    border-top: 1px solid beige;
+    border-bottom: 1px solid beige;
+    padding: 25px;
+}
+
+.filter{
+    width:150px;
+    background-color: black;
+}
+
+.itemsDiv{
+    padding: 20px 10px;
+     display: grid;
+    grid-template-columns: 25% 25% 25%  ;
+    /* grid-template-rows:auto; */
+    /* justify-items: center; */
+
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+}
+
+.item{
+    width:400px;
+    height:750px ;
+    border: 1px black solid;
+    /* padding: 10px; */
+    margin: 15px;
+}
+
+.item img{
+    width:inherit;
+    height: inherit;
+    width:900px;
+    height:1500px ;
+}
