@@ -3,63 +3,57 @@ import Card from 'react-bootstrap/Card';
 import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import Item from './Item';
 
 export default function StructureCategory() {
     return (
         <div className='categoryPage'>
             <h4>שם הקטגוריה</h4>
 
-            {/* <div className='d-flex '> */}
             <Row>
-                <Col md={2} className='filter' >
-                    <div>filter</div>
-                </Col>
-                <Col md={10}>
 
+                {/* <Col></Col> */}
+                <Col md={10} >
+                    <Container>
+                        <Row className='itemsDiv'>
 
-                    {/* <div className='item'>
-                    <Card>
-                        <Card.Img variant="top" src="https://top-selfie.co.il/wp-content/uploads/2021/05/sunset-1373171.jpg" />
-                        <Card.Body>
-                            <Card.Title>Card title</Card.Title>
-                            <Card.Text>
-                                price
-                            </Card.Text>
-                            <Card.Text>
-                                color
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-                </div>
-                <div className='item'>
-                    <Image src="https://www.photo-art.co.il/wp-content/uploads/2015/09/BY1A4457.jpg" rounded />
-                    <h5>type</h5>
-                </div> */}
+                            <Col className='item'>
+                                <Row className='itemDetails'>
+                                    <Image src="https://www.photo-art.co.il/wp-content/uploads/2015/09/BY1A4457.jpg" />
+                                    <Col>
+                                        <div>שם המוצר</div>
+                                        <div>צבע</div>
+                                    </Col>
+                                    <Col>מחיר</Col>
+                                </Row>
+                            </Col>
 
-                    <Row className='itemsDiv' >
-                        <Col xs={3} md className='item'>1 of 3</Col>
-                        <Col xs={3} md className='item'>2 of 3</Col>
-                        <Col xs={3} md className='item'>3 of 3</Col>
+                            <Col className='item'>
+                                <Image src="https://www.stickdecor.co.il/files/products/image1_1697_2016-09-19_10-43-16.jpg" />
 
-                    </Row>
-                    <Row className='itemsDiv' xs={4} md={6}>
-                        <Col md className='item'>1 of 3</Col>
-                        <Col md className='item'>2 of 3</Col>
-                        <Col md className='item'>3 of 3</Col>
-                        <Col md className='item'>3 of 3</Col>
-                    </Row>
-                    <Row className='itemsDiv'>
-                        <Col md className='item'>1 of 3</Col>
-                        <Col md className='item'>2 of 3</Col>
-                        <Col md className='item'>3 of 3</Col>
-                    </Row>
-                    {/* <div className='item'>פריט 3</div>
-                    <div className='item'>פריט 4</div>
-                    <div className='item'>פריט 5</div>
-                    <div className='item'>פריט 6</div> */}
+                                <div className='itemD'>
+                                    <div className='d1'>
+                                        <div>שם המוצר</div>
+                                        <div>צבע</div>
+                                    </div>
+                                    <div className='d2'>מחיר</div>
+                                </div>
+                            </Col>
+                            <Col className='item'>
+                                <Item itemImage={'https://www.stickdecor.co.il/files/products/image1_1697_2016-09-19_10-43-16.jpg'} itemName={'מכנסי עור'} itemColor={'red'} ItemPrice={'100'} />
+                            </Col>
+                            <Col className='item'>אופציה שלישית</Col>
+                            <Col className='item'>אופציה שלישית</Col>
+                        </Row>
+                    </Container>
 
                 </Col>
+                {/* <Col></Col> */}
+
             </Row>
+
+
         </div>
         // </div>
     );
