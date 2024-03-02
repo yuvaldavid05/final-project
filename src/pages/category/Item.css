@@ -1,2 +1,37 @@
+.body-category .holder .card{
+    font-size: 15px;
+    max-width: 250px;
+    border: none;
+    position: relative;
+    margin: 10px 0;
+}
 
+.body-category .holder .card .like{
+    position:absolute;
+    right: 10px;
+    font-size: 27px;
+}
+
+.body-category .holder .card p{
+    margin: 0;
+}
+
+.body-category .holder .card .footerCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-category .holder .card .footerCard a{
+    color:rgb(97, 92, 92) ;
+}
+
+.body-category .holder .card .footerCard button{
+    font-size: 15px;  
+}
+
+.body-category .holder .card .footerCard a, 
+.body-category .holder .card .footerCard button{
+    margin: 12px;
+}
 

@@ -1,0 +1,10 @@
+.body-category .title-holder{
+    padding: 15px 0 0 0 ;
+}
+
+
+@media (max-width : 769px) {
+    .holder .card{
+       
+    }
+}

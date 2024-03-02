@@ -1,20 +1,26 @@
-import Col from 'react-bootstrap/esm/Col';
 import './Item.css';
-import Image from 'react-bootstrap/Image';
-
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
+import { IoHeartOutline } from "react-icons/io5";
 
 export default function Item({ itemImage, itemName, itemColor, ItemPrice }) {
     return (
         <>
-            <Image src={itemImage} />
-
-            <div className='itemD'>
-                <Col className='d1'>
-                    <div>{itemName}</div>
-                    <div>{itemColor}</div>
-                </Col>
-                <Col className='d2'>{ItemPrice} ש"ח</Col>
-            </div>
+            <Card>
+                <Card.Img variant="top" src={itemImage} />
+                <div className='like'>
+                    <IoHeartOutline />
+                </div>
+                <Card.Body>
+                    <Card.Title>{itemName}</Card.Title>
+                    <Card.Text> {ItemPrice} nis</Card.Text>
+                    <Card.Text> color: {itemColor}</Card.Text>
+                    <div className='footerCard'>
+                        <Card.Link> more info</Card.Link>
+                        <Button variant="primary">+ add item</Button>
+                    </div>
+                </Card.Body>
+            </Card>
         </>
     )
 }
