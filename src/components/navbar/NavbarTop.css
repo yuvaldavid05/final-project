@@ -1,5 +1,3 @@
-
-
 .top div{
     min-width:50px;
     /* border: 2px black solid; */
@@ -8,10 +6,33 @@
 
 .mainNav{
     background-color: rgba(255, 255, 255, 0.538);
+    position: relative;
+    padding: 5px;
+}
+
+.mainNav .container{
+    margin: 0;
+}
+
+.mainNav .navbar-brand{
+    display: flex;
+}
+
+.mainNav .navbar-brand a,
+.mainNav .navbar-brand span{
+    font-size: 20px;
+    margin: 0 10px;
     
 }
+.mainNav .navbar-brand a{
+    /* color: rgba(58, 56, 56, 0.784); */
+    color: rgba(0, 0, 0, 0.755);
+}
+.mainNav .navbar-brand span{
+    color: rgba(128, 128, 128, 0.799);
+}
+
 
 .linkCategory{
     color: rgba(0, 0, 0, 0.748);
-    
 }
