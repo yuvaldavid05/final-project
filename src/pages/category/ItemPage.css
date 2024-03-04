@@ -9,35 +9,77 @@
 
 .item-page-body .item-page-header .item-page-img-left{
     border: 1px solid gray;
-
 }
 
 .item-page-body .item-page-header .col.item-page-info-right{
-/* border: 1px solid black; */
+    /* border: 1px solid black; */
+    padding: 15px 0;
+    margin: auto;
 
 }
 
- .col.item-page-info-right .color-of-item{
+.col.item-page-info-right .item-price{
+    margin-bottom: 15px;
+}
+
+.col.item-page-info-right .item-color-div{
+    display: flex;
+    justify-content: center;
+}
+
+ .col.item-page-info-right .item-color-div .the-color{
     width: 30px;
     height: 30px;
     background-color: blue;
-    
 }
 
-.col.item-page-info-right .size-div{
+.col.item-page-info-right .item-size-div{
     display: flex;
     justify-content: center;
     margin: 25px 0;
 }
 
-.col.item-page-info-right .size-div div{
+.col.item-page-info-right .item-size-div div{
     width:30px;
     height: 30px;
     border: 1px solid gray;
-    margin:10px;
+    margin:10px 5px;
 }
 
 
-.col.item-page-info-right .size-div div:hover{
+.col.item-page-info-right .item-size-div div:hover{
     background-color: gray;
+}
+
+.col.item-page-info-right .add-item-to{
+   display: flex;
+    justify-content: center;
+}
+
+.col.item-page-info-right .add-item-to svg,
+.col.item-page-info-right .add-item-to button{
+    margin:0 10px;
+}
+
+.col.item-page-info-right .add-item-to svg{
+    font-size: 30px;
+}
+
+.col.item-page-info-right .add-item-to button{
+    width:300px;
+    font-size: 20px;
+}
+
+.footer-item-page h3{
+    margin: 25px;
+}
+
+.footer-item-page .accordion{
+    font-size: 15px;
+}
+
+.footer-item-page .accordion-item .accordion-header{
+    font-size: 18px;
+    /* border: 2px solid rgba(128, 128, 128, 0.76); */
+    border-radius: 5px;
 }

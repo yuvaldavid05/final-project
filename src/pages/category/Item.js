@@ -2,6 +2,7 @@ import './Item.css';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import { IoHeartOutline } from "react-icons/io5";
+import { IoMdHeartEmpty } from "react-icons/io";
 import { useEffect } from 'react';
 import Form from 'react-bootstrap/Form';
 import { Link } from 'react-router-dom';
@@ -21,7 +22,8 @@ export default function Item({ itemImage, itemName, itemColor, ItemPrice, itemSi
             <Card>
                 <Card.Img variant="top" src={itemImage} />
                 <div className='like'>
-                    <IoHeartOutline />
+                    {/* <IoHeartOutline /> */}
+                    <IoMdHeartEmpty />
                 </div>
                 <Card.Body>
                     <Card.Title>{itemName}</Card.Title>

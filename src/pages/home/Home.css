@@ -1,5 +1,12 @@
 .homeDiv{
     width:100%;
-    height: 75vh;
-    border: 1px red solid;
+    height: 65vh;
+    /* border: 1px red solid; */
+    background-image:linear-gradient(rgba(172, 124, 124, 0.549) , rgba(255, 255, 255, 0.79)), url("https://i.pinimg.com/564x/83/56/f1/8356f10495c8ff75d1f8989b8fd625c7.jpg")
+   
+}
+
+.homeDiv img{
+   width: inherit;
+   height: inherit;
 }
