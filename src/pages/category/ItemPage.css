@@ -1,0 +1,43 @@
+
+.item-page-body .item-page-header{
+    margin: 25px 5px;
+}
+.item-page-body .item-page-header .item-page-img-left img{
+  min-width:200px;
+  max-height: 500px;
+}
+
+.item-page-body .item-page-header .item-page-img-left{
+    border: 1px solid gray;
+
+}
+
+.item-page-body .item-page-header .col.item-page-info-right{
+/* border: 1px solid black; */
+
+}
+
+ .col.item-page-info-right .color-of-item{
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    
+}
+
+.col.item-page-info-right .size-div{
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+.col.item-page-info-right .size-div div{
+    width:30px;
+    height: 30px;
+    border: 1px solid gray;
+    margin:10px;
+}
+
+
+.col.item-page-info-right .size-div div:hover{
+    background-color: gray;
+}

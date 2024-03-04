@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import { IoHeartOutline } from "react-icons/io5";
 import { useEffect } from 'react';
 import Form from 'react-bootstrap/Form';
+import { Link } from 'react-router-dom';
 
 export default function Item({ itemImage, itemName, itemColor, ItemPrice, itemSizes }) {
     useEffect(() => {
@@ -61,7 +62,9 @@ export default function Item({ itemImage, itemName, itemColor, ItemPrice, itemSi
 
                     </Card.Text>
                     <div className='footerCard'>
-                        <Card.Link href='#'> more info</Card.Link>
+                        <Link to="/item-page">
+                            more info
+                        </Link>
                         <Button variant="primary">+ add item</Button>
                     </div>
                 </Card.Body>
