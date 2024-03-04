@@ -23,14 +23,14 @@ export const list = [
 export default function ShoppingBasket() {
     const [sum, setSum] = useState(0);
 
-    useEffect(() => {
-        list.map((y, i) => {
-            while (i < list.length) {
-                setSum(sum + y.itemPrice)
-            }
-        }
-        );
-    }, [])
+    // useEffect(() => {
+    //     list.map((y, i) => {
+    //         while (i < list.length) {
+    //             setSum(sum + y.itemPrice)
+    //         }
+    //     }
+    //     );
+    // }, [])
 
 
 

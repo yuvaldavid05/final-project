@@ -26,15 +26,19 @@ export default function NavbarTop() {
 
             <Navbar collapseOnSelect expand="lg" className="mainNav" sticky="top">
                 <Container>
-                    <Navbar.Brand href="#home">
+                    <Navbar.Brand>
                         {/* React-Bootstrap */}
-                        <Link to="shopping-basket">
-                            <BsBagPlus />
-                        </Link>
+                        <Nav.Link>
+                            <Link to="shopping-basket">
+                                <BsBagPlus />
+                            </Link>
+                        </Nav.Link>
                         <span>|</span>
-                        <Link to="wish-list">
-                            <BsBookmarkHeart />
-                        </Link>
+                        <Nav.Link>
+                            <Link to="wish-list">
+                                <BsBookmarkHeart />
+                            </Link>
+                        </Nav.Link>
                     </Navbar.Brand>
 
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />

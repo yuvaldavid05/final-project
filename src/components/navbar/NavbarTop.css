@@ -21,12 +21,13 @@
 .mainNav .navbar-brand a,
 .mainNav .navbar-brand span{
     font-size: 20px;
-    margin: 0 10px;
+
     
 }
 .mainNav .navbar-brand a{
     /* color: rgba(58, 56, 56, 0.784); */
     color: rgba(0, 0, 0, 0.755);
+    margin: 0 7px;
 }
 .mainNav .navbar-brand span{
     color: rgba(128, 128, 128, 0.799);
