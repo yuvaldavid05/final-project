@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 import { BsBagPlus } from "react-icons/bs";
 import { BsBookmarkHeart } from "react-icons/bs";
+import { TiPhoneOutline } from 'react-icons/ti';
 
 export default function NavbarTop() {
     const category = [
@@ -13,6 +14,7 @@ export default function NavbarTop() {
         { name: '/shirts', title: ' חולצות', number: '2' },
         { name: '/shoes', title: ' נעליים', number: '3' },
         { name: '/category', title: ' קטגוריה', number: '4' },
+        { name: '/contact-us', title: 'צור קשר', number: '5' },
     ]
 
     return (
@@ -21,7 +23,11 @@ export default function NavbarTop() {
                 <div className='flex-grow-1'>
                     <Navbar.Brand href="/">React-Bootstrap</Navbar.Brand>
                 </div>
-                <div>contact</div>
+                <div className='contactUsIcon'>
+                    <Link to="contact-us">
+                        <TiPhoneOutline />
+                    </Link>
+                </div>
             </div>
 
             <Navbar collapseOnSelect expand="lg" className="mainNav" sticky="top">

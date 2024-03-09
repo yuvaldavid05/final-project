@@ -1,7 +1,18 @@
 .top div{
-    min-width:50px;
+    min-width:40px;
     /* border: 2px black solid; */
     margin: 5px;
+}
+
+.top div.contactUsIcon{
+    height:40px;
+    border: 1px solid rgb(68, 68, 68);
+    border-radius: 50%;
+}
+
+
+.top div.contactUsIcon svg{
+    color:rgb(68, 68, 68);
 }
 
 .mainNav{

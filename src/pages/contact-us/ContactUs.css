@@ -1,0 +1,20 @@
+.contact-page-body{
+    margin: 25px;
+}
+.contact-page-body .contact-form{
+    margin: 25px 0;
+}
+
+.contact-page-body .contact-form .form-div{
+    border: 1px solid gray;
+    height:60vh;
+
+}
+
+.contact-page-body .contact-form .form-div .row.details{
+    margin: 10px 0;
+}
+
+.contact-page-body .contact-form .form-div .row .col{
+    font-size: 15px;
+}
