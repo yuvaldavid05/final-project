@@ -2,19 +2,21 @@
     margin: 25px;
 }
 .contact-page-body .contact-form{
-    margin: 25px 0;
-}
-
-.contact-page-body .contact-form .form-div{
-    border: 1px solid gray;
+    max-width: 500px;
     height:60vh;
-
+    border: 1px solid gray;
+    border-radius: 15px;
+    margin: auto;
 }
 
-.contact-page-body .contact-form .form-div .row.details{
-    margin: 10px 0;
+.contact-page-body .contact-form h4{
+    margin: 8px;
 }
 
-.contact-page-body .contact-form .form-div .row .col{
+.contact-page-body .contact-form .form-floating{
+    margin-top: 10px;
+}
+
+.contact-page-body .contact-form .row .col{
     font-size: 15px;
 }

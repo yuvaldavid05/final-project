@@ -14,47 +14,44 @@ export default function ContactUs() {
                     <p>let us know what u think..</p>
                 </Row>
                 <Row className='contact-form'>
-                    <Col></Col>
-                    <Col xs={5} className='form-div'>
-                        <p>fill the inputs</p>
-                        <div>
-                            <Row>
-                                <Col>
-                                    <Form.Label htmlFor="inputPassword5">full-name</Form.Label>
-                                    <Form.Control
-                                        type="fullName"
-                                        id="inputFullName"
-                                        aria-describedby="passwordHelpBlock"
-                                    />
-                                </Col>
-
-                                <Col>
-                                    <Form.Label htmlFor="inputPassword5">phone</Form.Label>
-                                    <Form.Control
-                                        type="fullName"
-                                        id="inputFullName"
-                                        aria-describedby="passwordHelpBlock"
-                                    />
-                                </Col>
-                            </Row>
-                            <FloatingLabel controlId="floatingTextarea2" label="Comments">
+                    <h4>fill the inputs</h4>
+                    <div className='costumer-details'>
+                        <Row>
+                            <Col>
+                                <Form.Label htmlFor="inputPassword5">full-name</Form.Label>
                                 <Form.Control
-                                    as="textarea"
-                                    placeholder="Leave a comment here"
-                                    style={{ height: '150px' }}
+                                    type="fullName"
+                                    id="inputFullName"
+                                    aria-describedby="passwordHelpBlock"
                                 />
-                            </FloatingLabel>
-                        </div>
-                        <Row className='details'>
-                            <Col>our address: <br></br>hsuhshsdha 54</Col>
-                            <Col>our phone: <br></br>054-8882645</Col>
-                            <Col> our email:<br></br> sdfhud@asjnjsadnd</Col>
+                            </Col>
+
+                            <Col>
+                                <Form.Label htmlFor="inputPassword5">phone</Form.Label>
+                                <Form.Control
+                                    type="fullName"
+                                    id="inputFullName"
+                                    aria-describedby="passwordHelpBlock"
+                                />
+                            </Col>
                         </Row>
 
-                    </Col>
-                    <Col></Col>
+                        <FloatingLabel controlId="floatingTextarea2" label="Comments">
+                            <Form.Control
+                                as="textarea"
+                                placeholder="Leave a comment here"
+                                style={{ height: '150px' }}
+                            />
+                        </FloatingLabel>
+
+                    </div>
+                    <Row className='Web-details'>
+                        <Col>our address: <br></br>hsuhshsdha 54</Col>
+                        <Col>our phone: <br></br>054-8882645</Col>
+                        <Col> our email:<br></br> sdfhud@asjnjsadnd</Col>
+                    </Row>
                 </Row>
             </Container>
         </section >
-    )
+    );
 }
