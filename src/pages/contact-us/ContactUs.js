@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/esm/Button';
 
 export default function ContactUs() {
     return (
@@ -43,7 +44,7 @@ export default function ContactUs() {
                                 style={{ height: '150px' }}
                             />
                         </FloatingLabel>
-
+                        <Button>send</Button>
                     </div>
                     <Row className='Web-details'>
                         <Col>our address: <br></br>hsuhshsdha 54</Col>

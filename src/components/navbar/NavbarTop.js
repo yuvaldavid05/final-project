@@ -9,12 +9,12 @@ import { TiPhoneOutline } from 'react-icons/ti';
 
 export default function NavbarTop() {
     const category = [
-        { name: '/dresses', title: ' שמלות', number: '0' },
-        { name: '/jeans', title: ' גינסים', number: '1' },
-        { name: '/shirts', title: ' חולצות', number: '2' },
-        { name: '/shoes', title: ' נעליים', number: '3' },
-        { name: '/category', title: ' קטגוריה', number: '4' },
-        { name: '/contact-us', title: 'צור קשר', number: '5' },
+        { name: '/dresses', title: 'dresses', number: '0' },
+        { name: '/jeans', title: 'jeans', number: '1' },
+        { name: '/shirts', title: 'shirts', number: '2' },
+        { name: '/shoes', title: 'shoes', number: '3' },
+        { name: '/category', title: 'category', number: '4' },
+        { name: '/contact-us', title: 'contact-us', number: '5' },
     ]
 
     return (
