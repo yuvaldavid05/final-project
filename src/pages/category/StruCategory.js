@@ -28,7 +28,7 @@ export default function StruCategory() {
         <section id="category" className='body-category'>
             <Container fluid>
                 <div className='title-holder'>
-                    <h2>שם הקטגוריה</h2>
+                    <h2>Category Name</h2>
                     <div>jjdfnafnd</div>
                     <hr></hr>
                 </div>
