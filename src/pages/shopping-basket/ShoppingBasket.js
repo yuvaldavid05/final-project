@@ -35,11 +35,11 @@ export default function ShoppingBasket() {
     //     );
     // }, [])
 
-    const sumList = () => {
-        list.map((y) => {
-            setSum(sum + y.itemPrice)
-        })
-    }
+    // const sumList = () => {
+    //     list.map((y) => {
+    //         setSum(sum + y.itemPrice)
+    //     })
+    // }
 
 
 
