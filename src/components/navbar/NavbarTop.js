@@ -1,4 +1,5 @@
 import './NavbarTop.css';
+import './NavbarTop2.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -6,6 +7,8 @@ import { Link } from 'react-router-dom';
 import { BsBagPlus } from "react-icons/bs";
 import { BsBookmarkHeart } from "react-icons/bs";
 import { TiPhoneOutline } from 'react-icons/ti';
+
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 export default function NavbarTop() {
     const category = [
@@ -45,7 +48,7 @@ export default function NavbarTop() {
                                 <BsBookmarkHeart />
                             </Link>
                         </Nav.Link>
-                    </Navbar.Brand>
+                    </Navbar.Brand >
 
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
@@ -62,9 +65,9 @@ export default function NavbarTop() {
 
                         </Nav>
                     </Navbar.Collapse>
-                </Container>
-            </Navbar>
-
+                </Container >
+            </Navbar >
         </>
+
     );
 }

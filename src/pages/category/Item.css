@@ -5,6 +5,7 @@
     border: none;
     position: relative;
     margin: 10px 0;
+    border: 1px solid gray;
 }
 
 .body-category .holder .card .like{

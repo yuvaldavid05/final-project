@@ -15,7 +15,8 @@
 
 .home-page-body .homePageIcons{
     height:80px;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
+    background-color: rgba(70, 70, 70, 0.284);
     align-items: center;
 }
 
@@ -36,5 +37,6 @@
 .home-page-body .homePageContactUs{
     height:300px;  
     align-items: center;
-    background-color: rgba(128, 128, 128, 0.615);
+    /* background-color: rgba(128, 128, 128, 0.615); */
+    background-color: rgba(163, 225, 204, 0.768);
 }

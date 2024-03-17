@@ -14,7 +14,7 @@ export default function Footer() {
     return (
         <section id="footer-section" className='footer'>
             <Container fluid>
-                <Row className='footer-div'>
+                {/* <Row className='footer-div'>
                     <Col xs={12} md={3} className='divs' >
                         <h4>my account</h4>
 
@@ -31,7 +31,6 @@ export default function Footer() {
                     </Col>
                     <Col xs={6} md={3} className='divs' >
                         <h4>about</h4>
-                        {/* <FaInfo /> */}
                         <ListGroup>
                             <ListGroup.Item>
                                 <Link to=""> click here to page "about us"</Link>
@@ -54,7 +53,7 @@ export default function Footer() {
                     <Col xs={12} md={3} className='divs'>
                         <h4>4</h4>
                     </Col>
-                </Row >
+                </Row > */}
             </Container>
         </section>
     );
