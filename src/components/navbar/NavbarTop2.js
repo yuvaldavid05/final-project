@@ -37,22 +37,18 @@ export default function NavbarTop2() {
                                     </NavDropdown.Item>
                                 ))
                             }
-                            {/* <NavDropdown.Item href="/category">Shirts</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">
-                                Another action
-                            </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">
-                                Separated link
-                            </NavDropdown.Item> */}
                         </NavDropdown>
                     </Nav>
                     <Nav>
-                        <Nav.Link href="#deets">More deets</Nav.Link>
-                        <Nav.Link href="#t">More t</Nav.Link>
+                        <Nav.Link>
+                            <Link to="/wish-list">
+                                WistList
+                            </Link>
+                        </Nav.Link>
                         <Nav.Link eventKey={2} href="#memes">
-                            Dank memes
+                            <Link to="/shopping-basket">
+                                shopping-basket
+                            </Link>
                         </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
