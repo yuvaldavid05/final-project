@@ -13,7 +13,6 @@ import Accordion from 'react-bootstrap/Accordion';
 export default function ItemPage() {
     return (
         <section id="item-page" className='item-page-body'>
-
             <Container fluid>
                 <Row xs={1} md={2} className='item-page-header'>
                     <Col className='item-page-img-left'>
@@ -33,7 +32,7 @@ export default function ItemPage() {
                             <div>L</div>
                         </div>
 
-                        <div className='add-item-to'>
+                        <div className='add-item-to' >
                             <span>
                                 {/* <IoHeartOutline /> */}
                                 <IoMdHeartEmpty />

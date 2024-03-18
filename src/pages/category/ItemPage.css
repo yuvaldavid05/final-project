@@ -1,21 +1,20 @@
 
 .item-page-body .item-page-header{
-    margin: 25px 5px;
+    margin: 50px 5px;
 }
 .item-page-body .item-page-header .item-page-img-left img{
   min-width:200px;
-  max-height: 500px;
+  max-height: 400px;
 }
 
 .item-page-body .item-page-header .item-page-img-left{
-    border: 1px solid gray;
+    border: 1px solid rgba(128, 128, 128, 0.121);
+    border-radius: 5px;
 }
 
 .item-page-body .item-page-header .col.item-page-info-right{
-    /* border: 1px solid black; */
     padding: 15px 0;
     margin: auto;
-
 }
 
 .col.item-page-info-right .item-price{
@@ -42,8 +41,10 @@
 .col.item-page-info-right .item-size-div div{
     width:30px;
     height: 30px;
-    border: 1px solid gray;
+    border: 1px solid rgba(128, 128, 128, 0.479);
+    border-radius: 5px;
     margin:10px 5px;
+    cursor: pointer;
 }
 
 
@@ -66,7 +67,7 @@
 }
 
 .col.item-page-info-right .add-item-to button{
-    width:300px;
+    width:500px;
     font-size: 20px;
 }
 
@@ -82,4 +83,14 @@
     font-size: 18px;
     /* border: 2px solid rgba(128, 128, 128, 0.76); */
     border-radius: 5px;
+}
+
+@media (max-width : 780px) {
+    /* .col.item-page-info-right .add-item-to{
+        left: 25px;
+    }
+
+    .col.item-page-info-right .add-item-to button{
+        width:50vw;
+    } */
 }
